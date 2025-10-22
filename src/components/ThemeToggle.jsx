@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaRegSun, FaRegMoon } from "react-icons/fa";
-import { cn } from "../lib/utlis.js";
+import { cn } from "../lib/utils.js";
 export const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 

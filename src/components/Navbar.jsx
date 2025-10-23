@@ -1,5 +1,5 @@
 import { cn } from "../lib/utils.js";
-import "./index.css";
+import { ThemeToggle } from "./ThemeToggle.jsx";
 import { MdMenu } from "react-icons/md";
 import React, { useEffect, useState } from "react";
 // import SamLogo from "../public/images/SamLogo.png";
@@ -33,7 +33,7 @@ export const Navbar = () => {
           className="text-xl font-bold text-primary flex items-center space-x-2 font-karma"
           href="#hero"
         >
-          <span className="text-glow text-foreground flex items-center space-x-1">
+          <span className="text-foreground flex items-center space-x-1">
             <span>S A M S</span>
             <img
               src="/images/SamLogo.png"
@@ -68,8 +68,7 @@ export const Navbar = () => {
         </button>
 
         <div
-          className={cn(
-            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
+          className={cn("fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
@@ -90,6 +89,7 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
+      <ThemeToggle />
     </nav>
   );
 };

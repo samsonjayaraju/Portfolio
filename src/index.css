@@ -130,21 +130,3 @@
   text-align: center;
 }
 
-
-
-
-.nav-logo {
-  font-family: 'Karma', serif;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 1.5rem;
-  color: #222;
-}
-
-.nav-logo img {
-  width: 28px;
-  height: 28px;
-  vertical-align: middle;
-}

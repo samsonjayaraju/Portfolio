@@ -1,6 +1,6 @@
 import { cn } from "../lib/utils.js";
-import { ThemeToggle } from "./ThemeToggle.jsx";
-import { MdMenu } from "react-icons/md";
+// import { ThemeToggle } from "./ThemeToggle.jsx";
+import { MdMenu, MdClose } from "react-icons/md";
 import React, { useEffect, useState } from "react";
 // import SamLogo from "../public/images/SamLogo.png";
 const navItems = [
@@ -15,7 +15,7 @@ export const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.screenY > 10);
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -64,11 +64,11 @@ export const Navbar = () => {
           className="md:hidden p-2 text-foreground z-50"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
-          {isMenuOpen ? <X size={24} /> : <MdMenu size={24} />}{" "}
+          {isMenuOpen ? <MdClose size={24} /> : <MdMenu size={24} />}{" "}
         </button>
 
         <div
-          className={cn("fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
+          className={cn("fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
@@ -89,7 +89,7 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
     </nav>
   );
 };

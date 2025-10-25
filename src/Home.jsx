@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeToggle } from "./components/ThemeToggle.jsx";
 import { HeroSection } from "./components/HeroSection.jsx";
+import { Navbar } from "./components/Navbar.jsx";
 
 const Home = () => {
   return (

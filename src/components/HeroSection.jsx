@@ -1,10 +1,47 @@
-import React from 'react'
-import { FaQ } from 'react-icons/fa6'
+import React from "react";
 
-const HeroSection = () => {
+export const HeroSection = () => {
   return (
-    <div>HeroSection</div>
-  )
-}
+    
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center justify-start px-8 md:px-24"
+    >
+      <div className="max-w-lg text-left z-10">
+        <p className="text-sm font-semibold opacity-0 animate-fade-in">
+          Hi there! 👋 I am
+        </p>
 
-export default HeroSection
+        <h1 className="text-4xl md:text-5xl font-bold leading-tight opacity-0 animate-fade-in-delay-1">
+          Samson
+        </h1>
+
+        <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground opacity-0 animate-fade-in-delay-2">
+          I'm a passionate Designer and Web Developer
+        </h2>
+
+        <p className="mt-4 text-base md:text-lg text-muted-foreground opacity-0 animate-fade-in-delay-3">
+          Design with purpose. Build with precision. I turn ideas into interactive
+          experiences that not only look great but also perform seamlessly across
+          devices.
+        </p>
+
+        <div className="pt-6 opacity-0 animate-fade-in-delay-4">
+          <a href="#projects" className="cosmic-button">
+            HIRE ME
+          </a>
+        </div>
+      </div>
+      {/* RIGHT SIDE — IMAGE */}
+    <div
+        className="w-full md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0 opacity-0 animate-image-in"
+      >
+        <img
+          src="/images/hero-bg.png"
+          alt="Hero Illustration"
+          className="w-full max-w-md md:max-w-lg object-contain"
+        />
+      </div>
+    </section>
+  );
+};

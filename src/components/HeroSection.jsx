@@ -1,5 +1,5 @@
 import React from "react";
-
+import Samsonbg from "/images/Samsonbg.png";
 export const HeroSection = () => {
   return (
     
@@ -33,15 +33,28 @@ export const HeroSection = () => {
         </div>
       </div>
       {/* RIGHT SIDE — IMAGE */}
-    <div
+    {/* <div
         className="w-full md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0 opacity-0 animate-image-in"
       >
         <img
-          src="/images/hero-bg.png"
+          src={Samsonbg}
           alt="Hero Illustration"
           className="w-full max-w-md md:max-w-lg object-contain"
         />
-      </div>
+      </div> */}
+      <section className="flex items-center justify-center min-h-screen bg-transparent">
+  {/* <img
+    src={Samsonbg}
+    alt="Hero Illustration"
+    className="w-full max-w-md object-contain bg-transparent"
+  /> */}
+  <img
+  src={Samsonbg}
+  alt="Hero Illustration"
+  className="w-[300px] sm:w-[600px] md:w-[900px] lg:w-[1152px] h-auto object-contain"
+/>
+
+</section>
     </section>
   );
 };

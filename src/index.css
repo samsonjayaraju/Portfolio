@@ -52,7 +52,7 @@
   :root{
     --background: 211, 24%, 81%
     --foreground: 210, 16%, 93%;
-    --primary: #071330;
+    --primary: 222, 75%, 11%;
     --primary-foreground: 210, 16%, 8%;
     --card: #0C4160;
     --border:214 32% 91%%
@@ -61,7 +61,7 @@
   .dark {
     --background: 224, 76%, 11%;
     --foreground: 210, 30%, 93%;
-    --primary: #C3CEDA;
+    --primary: 211.3, 23.7%, 81%;
     --primary-foreground: 210, 16%, 100%;
     --card: #738FA7;
     --border:217 33% 20%;

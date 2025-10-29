@@ -20,8 +20,8 @@ const Home = () => {
       {/* Main Content which contains Hero, Projects, Contact sections */}
       <main>
         <HeroSection />
-        <AboutSection />
-        <SkillsSection />
+        {/* <AboutSection /> */}
+        {/* <SkillsSection /> */}
         <ProjectsSection />
         <ContactSection />
       </main>

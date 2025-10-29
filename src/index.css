@@ -54,16 +54,16 @@
     --foreground: 210, 16%, 93%;
     --primary: 222, 75%, 11%;
     --primary-foreground: 210, 16%, 8%;
-    --card: #0C4160;
+    --card:  207, 73%, 21%;
     --border:214 32% 91%%
 
   }
   .dark {
     --background: 224, 76%, 11%;
     --foreground: 210, 30%, 93%;
-    --primary: 211.3, 23.7%, 81%;
+    --primary: 211.3, 23.7%, 81%; /*Light blue*/
     --primary-foreground: 210, 16%, 100%;
-    --card: #738FA7;
+    --card: 224, 76%, 11%;
     --border:217 33% 20%;
   }
   * {
@@ -117,11 +117,86 @@
   border: 1px solid transparent;
 }
 
-@utility cosmic-button {
-  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
-         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
-         hover:scale-105 active:scale-95;
+/* --- Keyframes (top-level) --- */
+@keyframes cosmicGlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
+
+/* --- Put inside your normal CSS file (works with Tailwind build) --- */
+/* Define a reusable class that mimics your @utility cosmic-button */
+.cosmic-button {
+  @apply relative inline-flex items-center justify-center
+         px-6 py-2 rounded-full font-semibold text-white
+         transition-all duration-500 overflow-hidden cursor-pointer;
+
+  /* Animated gradient */
+  background: linear-gradient(90deg, #6366f1, #a855f7, #ec4899, #f59e0b);
+  background-size: 300% 300%;
+  animation: cosmicGlow 6s ease infinite;
+
+  /* Glow */
+  box-shadow: 0 0 20px rgba(168,85,247,0.30);
+}
+
+/* Hover and active need normal CSS selectors (can't put pseudo inside @apply block) */
+.cosmic-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(168,85,247,0.50);
+}
+
+.cosmic-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 12px rgba(168,85,247,0.30);
+}
+
+/* Optional: support for focus-visible outline for accessibility */
+.cosmic-button:focus-visible {
+  outline: 2px solid rgba(168,85,247,0.35);
+  outline-offset: 4px;
+}
+
+/* If you want to register it as a Tailwind utility inside @layer utilities */
+@layer utilities {
+  .cosmic-button { /* copy same styles but without @apply duplication issues if needed */ }
+}
+
+.gradient-text {
+  font-size: 80px;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #ff6b6b,
+    #f7d794,
+    #1dd1a1,
+    #54a0ff,
+    #5f27cd
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.4s ease; /* Smooth transition in/out */
+}
+
+/* Animate only on hover */
+.gradient-text:hover {
+  animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 
 #root {
   max-width: 100%;

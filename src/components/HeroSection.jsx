@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaArrowAltCircleDown } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import Samsonbg from "/images/Samsonbg.png";
 
 export const HeroSection = () => {
@@ -14,9 +15,8 @@ export const HeroSection = () => {
           Hi there! 👋 I am
         </p>
 
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight opacity-0 animate-fade-in-delay-1">
-          Samson
-        </h1>
+        <h1 class="gradient-text">Samson.</h1>
+
 
         <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground opacity-0 animate-fade-in-delay-2">
           I'm a passionate Designer and Web Developer
@@ -49,6 +49,14 @@ export const HeroSection = () => {
               className="text-gray-200 dark:text-white hover:text-primary transition-all duration-300 hover:scale-110"
             >
               <FaLinkedin size={34} />
+            </a>
+            <a
+              href="https://linkedin.com/in/samsonjayaraju"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-200 dark:text-white hover:text-primary transition-all duration-300 hover:scale-110"
+            >
+              <SiLeetcode size={34} />
             </a>
           </div>
         </div>

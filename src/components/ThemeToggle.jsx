@@ -27,9 +27,9 @@ export const ThemeToggle = () => {
   return (
     <button onClick={toggleTheme} className={cn("fixed top-6 right-5 z-50 cursor-pointer")}>
       {isDarkMode ? (
-        <FaRegSun className="h-6 w-6 text-background-300" />
+        <FaRegSun className="h-4 w-4 text-background-300" />
       ) : (
-        <FaRegMoon className="h-6 w-6 text-background-300" />
+        <FaRegMoon className="h-4 w-4 text-background-300" />
       )}
     </button>
   );

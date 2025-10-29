@@ -1,10 +1,12 @@
 import { cn } from "../lib/utils.js";
-// import { ThemeToggle } from "./ThemeToggle.jsx";
+import { ThemeToggle } from "./ThemeToggle.jsx";
 import { MdMenu, MdClose } from "react-icons/md";
 import React, { useEffect, useState } from "react";
 // import SamLogo from "../public/images/SamLogo.png";
 const navItems = [
   { name: "Home", href: "#hero" },
+  { name: "About", href: "#about" },
+  { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
@@ -89,7 +91,7 @@ export const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* <ThemeToggle /> */}
+      <ThemeToggle />
     </nav>
   );
 };

@@ -37,10 +37,10 @@ export const ContactSection = () => {
           <div className="flex flex-col items-center justify-center space-y-8">
             <h4 className="font-semibold text-xl">Connect With Me</h4>
             <div className="flex space-x-6 text-2xl">
-              <a href="#" className="hover:text-primary transition-colors"><FaLinkedin /></a>
-              <a href="#" className="hover:text-primary transition-colors"><FaSquareXTwitter /></a>
-              <a href="#" className="hover:text-primary transition-colors"><FaInstagram /></a>
-              <a href="#" className="hover:text-primary transition-colors"><FaTwitch /></a>
+              <a href="https://linkedin.com/in/samsonjayaraju" target="_blank" className="hover:text-primary transition-colors"><FaLinkedin /></a>
+              <a href="https://x.com/samsonjayaraju" target='_blank' className="hover:text-primary transition-colors"><FaSquareXTwitter /></a>
+              {/* <a href="#" className="hover:text-primary transition-colors"><FaInstagram /></a>
+              <a href="#" className="hover:text-primary transition-colors"><FaTwitch /></a> */}
             </div>
           </div>
 

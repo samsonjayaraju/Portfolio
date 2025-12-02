@@ -6,31 +6,31 @@ const projects = [
   {
     id: 1,
     title: "SaaS Education Landing Page",
-    description: "A Student landing page app using Figma.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
+    description: "A Student landing page app using Figma and Visily.ai.",
+    image: "/public/images/Visily.png",
+    tags: ["Figma", "Visily"],
+    demoUrl: "https://app.visily.ai/projects/4614b2cd-050c-454b-ba5b-0efc99e2bbcf/boards/2140606",
     githubUrl: "#",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "ProTracker",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "The ultimate platform for students to manage projects, track milestones, and create stunning portfolios that get noticed by recruiters.",
+    image: "/public/images/ProTracker.png",
+    tags: ["React", "RadixUI", "MySQL"],
+    demoUrl: "https://protrackerwebapp.netlify.app/",
+    githubUrl: "https://github.com/samsonjayaraju/ProTracker",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Online Workshop & Training Platform",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "Organize, manage, and participate in interactive workshops designed for growth and skill development.",
+    image: "/public/images/Online_WorkShop_Training.png",
+    tags: ["React", "Node.js", "MySQL"],
+    demoUrl: "https://onlineworkshoptraining.netlify.app/",
+    githubUrl: "https://github.com/samsonjayaraju/Online-Workshop-Training-Platform",
   },
 ];
 
@@ -102,7 +102,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/samsonjayaraju"
           >
             Check My Github <FaArrowRight size={16} />
           </a>

@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "SaaS Education Landing Page",
     description: "A Student landing page app using Figma and Visily.ai.",
-    image: "/public/images/Visily.png",
+    image: "images/Visily.png",
     tags: ["Figma", "Visily"],
     demoUrl: "https://app.visily.ai/projects/4614b2cd-050c-454b-ba5b-0efc99e2bbcf/boards/2140606",
     githubUrl: "#",
@@ -17,7 +17,7 @@ const projects = [
     title: "ProTracker",
     description:
       "The ultimate platform for students to manage projects, track milestones, and create stunning portfolios that get noticed by recruiters.",
-    image: "/public/images/ProTracker.png",
+    image: "images/ProTracker.png",
     tags: ["React", "RadixUI", "MySQL"],
     demoUrl: "https://protrackerwebapp.netlify.app/",
     githubUrl: "https://github.com/samsonjayaraju/ProTracker",
@@ -27,7 +27,7 @@ const projects = [
     title: "Online Workshop & Training Platform",
     description:
       "Organize, manage, and participate in interactive workshops designed for growth and skill development.",
-    image: "/public/images/Online_WorkShop_Training.png",
+    image: "images/Online_WorkShop_Training.png",
     tags: ["React", "Node.js", "MySQL"],
     demoUrl: "https://onlineworkshoptraining.netlify.app/",
     githubUrl: "https://github.com/samsonjayaraju/Online-Workshop-Training-Platform",

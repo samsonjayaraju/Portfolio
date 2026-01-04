@@ -47,7 +47,7 @@ export const ContactSection = () => {
           {/* Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="bg-card p-8 rounded-2xl shadow-sm space-y-6"
+            // className="bg-card p-8 rounded-2xl shadow-sm space-y-6"
           >
             <h3 className="text-2xl font-semibold mb-4">Send a Message</h3>
 
@@ -62,7 +62,7 @@ export const ContactSection = () => {
                 name="name"
                 required
                 className="w-full px-4 py-3 rounded-xl border-none 
-                bg-[#C6D0DB]/80 text-[#0E1A2C] font-semibold
+                bg-secondary text-[#0E1A2C] font-semibold
                 shadow-inner backdrop-blur-md 
                 focus:outline-hidden focus:ring-2 focus:ring-[#B8C4D1]
                 placeholder:text-[#0E1A2C]/60 placeholder:font-semibold transition"
@@ -81,7 +81,7 @@ export const ContactSection = () => {
                 name="email"
                 required
                 className="w-full px-4 py-3 rounded-xl border-none 
-                bg-[#C6D0DB]/80 text-[#0E1A2C] font-semibold
+                bg-secondarytext-[#0E1A2C] font-semibold
                 shadow-inner backdrop-blur-md 
                 focus:outline-hidden focus:ring-2 focus:ring-[#B8C4D1]
                 placeholder:text-[#0E1A2C]/60 placeholder:font-semibold transition"
@@ -100,7 +100,7 @@ export const ContactSection = () => {
                 required
                 rows="4"
                 className="w-full px-4 py-3 rounded-xl border-none 
-                bg-[#C6D0DB]/80 text-[#0E1A2C] font-semibold
+                bg-secondary text-[#0E1A2C] font-semibold
                 shadow-inner backdrop-blur-md 
                 focus:outline-hidden focus:ring-2 focus:ring-[#B8C4D1]
                 placeholder:text-[#0E1A2C]/60 placeholder:font-semibold resize-none transition"

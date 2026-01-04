@@ -37,7 +37,7 @@ export const HeroSection = () => {
               href="https://github.com/samsonjayaraju"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-200 dark:text-white hover:text-primary transition-all duration-300 hover:scale-110"
+              // className="text-gray-200 dark:text-white hover:text-primary transition-all duration-300 hover:scale-110"
             >
               <FaGithub size={34} />
             </a>
@@ -46,7 +46,7 @@ export const HeroSection = () => {
               href="https://linkedin.com/in/samsonjayaraju"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-200 dark:text-white hover:text-primary transition-all duration-300 hover:scale-110"
+              // className="text-gray-200 dark:text-white hover:text-primary transition-all duration-300 hover:scale-110"
             >
               <FaLinkedin size={34} />
             </a>
@@ -54,7 +54,7 @@ export const HeroSection = () => {
               href="https://linkedin.com/in/samsonjayaraju"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-200 dark:text-white hover:text-primary transition-all duration-300 hover:scale-110"
+              // className="text-primary-200 dark:text-white hover:text-primary transition-all duration-300 hover:scale-110"
             >
               <SiLeetcode size={34} />
             </a>

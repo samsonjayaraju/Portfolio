@@ -63,7 +63,9 @@
     --foreground: 210, 30%, 93%;
     --primary: 211.3, 23.7%, 81%; /*Light blue*/
     --primary-foreground: 210, 16%, 100%;
-    --card: 224, 76%, 11%;
+    /* --card: 224, 76%, 11%; */
+        --card:  207, 73%, 21%;
+
     --border:217 33% 20%;
   }
   * {

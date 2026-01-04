@@ -62,7 +62,7 @@ export const ContactSection = () => {
                 name="name"
                 required
                 className="w-full px-4 py-3 rounded-xl border-none 
-                bg-secondary text-[#0E1A2C] font-semibold
+                bg-white text-[#0E1A2C] font-semibold
                 shadow-inner backdrop-blur-md 
                 focus:outline-hidden focus:ring-2 focus:ring-[#B8C4D1]
                 placeholder:text-[#0E1A2C]/60 placeholder:font-semibold transition"
@@ -81,7 +81,7 @@ export const ContactSection = () => {
                 name="email"
                 required
                 className="w-full px-4 py-3 rounded-xl border-none 
-                bg-secondarytext-[#0E1A2C] font-semibold
+                bg-white text-[#0E1A2C] font-semibold
                 shadow-inner backdrop-blur-md 
                 focus:outline-hidden focus:ring-2 focus:ring-[#B8C4D1]
                 placeholder:text-[#0E1A2C]/60 placeholder:font-semibold transition"
@@ -100,7 +100,7 @@ export const ContactSection = () => {
                 required
                 rows="4"
                 className="w-full px-4 py-3 rounded-xl border-none 
-                bg-secondary text-[#0E1A2C] font-semibold
+                bg-white text-[#0E1A2C] font-semibold
                 shadow-inner backdrop-blur-md 
                 focus:outline-hidden focus:ring-2 focus:ring-[#B8C4D1]
                 placeholder:text-[#0E1A2C]/60 placeholder:font-semibold resize-none transition"

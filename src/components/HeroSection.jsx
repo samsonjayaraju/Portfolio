@@ -19,7 +19,7 @@ export const HeroSection = () => {
 
 
         <h2 className="text-xl md:text-2xl font-semibold text-muted-foreground opacity-0 animate-fade-in-delay-2">
-          I'm a passionate Designer and Web Developer
+          I'm a passionate Designer and Front-End Web Developer
         </h2>
 
         <p className="mt-4 text-base md:text-lg text-muted-foreground opacity-0 animate-fade-in-delay-3">

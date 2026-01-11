@@ -207,3 +207,28 @@
   text-align: center;
 }
 
+/* Default cursor */
+/* body {
+  cursor: url("/cursors/cursor-default.cur"),
+          url("/cursors/cursor-default.png") 12 12,
+          auto;
+} */
+
+/* Pointer cursor */
+/* a,
+button, 
+[role="button"],
+input[type="submit"],
+input[type="button"] {
+  cursor: url("/cursors/cursor-pointer.cur"),
+          url("/cursors/cursor-pointer.png") 12 12,
+          pointer;
+}
+
+button:hover,
+a:hover,
+[onclick]:hover {
+  cursor: url("/cursors/cursor-pointer.cur"),
+          url("/cursors/cursor-pointer.png") 12 12,
+          pointer !important;
+} */

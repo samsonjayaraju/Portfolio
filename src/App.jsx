@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import SplashCursor from "./components/SplashCursor";
 import Home from './Home.jsx';
 import NotFound from './NotFound.jsx';
 import { Toaster } from './components/ui/toaster.jsx';
@@ -8,6 +9,7 @@ function App() {
 
   return (
     <>
+    {/* <SplashCursor /> */}
     <Toaster />
       <BrowserRouter>
         <Routes>

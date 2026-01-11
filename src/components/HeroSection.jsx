@@ -51,7 +51,7 @@ export const HeroSection = () => {
               <FaLinkedin size={34} />
             </a>
             <a
-              href="https://linkedin.com/in/samsonjayaraju"
+              href="https://leetcode.com/u/kl2400030991/"
               target="_blank"
               rel="noopener noreferrer"
               // className="text-primary-200 dark:text-white hover:text-primary transition-all duration-300 hover:scale-110"
